@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Form</title>
+</head>
+<body>
+    <form action="submit_form.php" method="post">
+        <label for="purpose">Purpose:</label>
+        <select name="purpose" id="purpose">
+            <option value="enquiry">Enquiry</option>
+            <option value="place_order">Place Order</option>
+            <option value="return">Return</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <br>
+
+        <label>Materials Provided:</label>
+        <br>
+        <input type="checkbox" name="materials[]" value="debit_note_book"> Debit Note Book<br>
+        <input type="checkbox" name="materials[]" value="pen"> Pen<br>
+        <input type="checkbox" name="materials[]" value="exam_papers"> Exam Papers<br>
+        <!-- Add more checkboxes as needed -->
+
+        <br>
+
+        <input type="submit" value="Submit">
+        <input type="button" value="Logout" onclick="window.location.href='logout.php';">
+    </form>
+</body>
+</html>
